@@ -1,16 +1,14 @@
 <?php
+
 class homeController extends controller {
 
-    public function __construct() {
-        parent::__construct();
-    }
-
     public function index() {
-        $dados = array();
+       
+       $dados = array();
+       $this->loadTemplate('home',$dados);
         
-        
-        
-        $this->loadTemplate('home', $dados);
     }
 
+    
 }
+
